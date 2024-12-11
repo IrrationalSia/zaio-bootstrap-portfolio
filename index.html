@@ -283,7 +283,7 @@ Click on 'Deploy side'
         
           <div class="input-group">
             
-            <textarea class="form-control" aria-label="With textarea" placeholder="Enter Message"></textarea>
+            <textarea class="form-control mt-3" aria-label="With textarea" placeholder="Enter Message"></textarea>
           </div>
           <div class="col-auto mt-3">
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -329,10 +329,7 @@ const navLinks = document.querySelectorAll('.nav-link');
 // Add event listeners to each link
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
-    // Remove the 'active' class from all links
     navLinks.forEach(nav => nav.classList.remove('active'));
-
-    // Add the 'active' class to the clicked link
     link.classList.add('active');
   });
 });
