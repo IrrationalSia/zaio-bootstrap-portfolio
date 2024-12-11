@@ -35,8 +35,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
   position: relative;
+  
   z-index: 1;
   
 }
@@ -45,8 +45,9 @@ body {
   height: 100%;
   width: 100%;
   background: black;
-  opacity: 60%;
+  opacity: 45%;
   position: absolute;
+  /* filter: blur(8px); */
   top: 0;
 }
 
