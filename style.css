@@ -31,12 +31,11 @@ body {
  */
 
  .banner-wrap {
-  background-image: url("C:/Users/USER/Downloads/Profile.jpg");
+  background-image: url(./assets/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-  border-bottom: 10px solid #222222;
   position: relative;
   z-index: 1;
   
