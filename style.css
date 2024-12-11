@@ -55,7 +55,7 @@ body {
   top: 0;
 }
 
-.nav-masthead .nav-link {
+.nav-masthead .nav-link  {
   padding: .25rem 0;
   font-weight: 700;
   color: rgba(255, 255, 255, .5);
@@ -72,7 +72,7 @@ body {
   margin-left: 1rem;
 }
 
-.nav-masthead .active {
+.nav-masthead .nav-link.active {
   color: #fff;
   border-bottom-color: #fff;
 }
@@ -81,4 +81,8 @@ body {
   background: black;
   opacity: 60%;
   transition: all 3s;
+}
+
+html {
+  scroll-behavior: smooth;
 }

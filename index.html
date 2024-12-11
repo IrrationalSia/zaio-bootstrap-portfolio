@@ -322,6 +322,22 @@ Click on 'Deploy side'
 
 });
 </script>
+<script>
+  // Select all navigation links
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Add event listeners to each link
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Remove the 'active' class from all links
+    navLinks.forEach(nav => nav.classList.remove('active'));
+
+    // Add the 'active' class to the clicked link
+    link.classList.add('active');
+  });
+});
+</script>
+
 
   </body>
 </html>
