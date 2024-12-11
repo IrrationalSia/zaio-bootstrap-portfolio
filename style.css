@@ -78,5 +78,7 @@ body {
 }
 
 .scrolling{
- 
+  background: black;
+  opacity: 60%;
+  transition: all 3s;
 }

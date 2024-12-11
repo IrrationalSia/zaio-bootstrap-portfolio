@@ -83,10 +83,10 @@ Click on 'Deploy side'
   
   <main class="d-flex flex-column align-items-center justify-content-center h-100 text-center" id="home">
     <h1 class="display-2">I am Siyamethemba Mpahlwa</h1>
-    <p class="lead">Fullstack Developer. Accountant. Entrepreneur. Physicist.</p>
-    <p class="lead"> Academic experience in physics, computer science, linguistics, and accounting. </p>
-      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-    </p>
+    <div><span class="lead" id="expertise"></span></div>
+    
+    <!-- <p class="lead"> Academic experience in physics, computer science, linguistics, and accounting. </p> -->
+      <!-- <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a> -->
   </main>
 
   <!-- <footer class="mt-auto text-white-50">
@@ -95,45 +95,7 @@ Click on 'Deploy side'
 </div>
     
 
-<!-- 
-    
-LINKING LOCAL REPO TO GITHUB REPO
 
-Step: 1
-Create a Remote Repository on GitHub:
-
-    Log in to your GitHub account.
-    Click the '+' button in the top-right corner and select "New Repository."
-    Enter a Repository Name, optional Description, choose Public or Private visibility, and any other desired settings.
-    Click "Create repository." 
-    
-Step: 2
-Open Your Command Line Interface (CLI):
-Open terminal inside your Visual Studio Code
-
-Step: 3
-Initialize Your Local Repository (if not already done):
-If your project isn't already a Git repository, initialize it by running:
-git init
-
-Step: 4
-Add and Commit Your Code: 
-Add your project files to the repository and make an initial commit:
-git add . 
-git commit -m "Added initial code"
-
-Step: 5
-Copy Remote Repository URL:
-    Go to your GitHub repository's page.
-    Copy the repository's URL.
-    Ex. git remote add origin https://github.com/username/git-repo.git
-
-Step: 6
-Push Local Code to Remote Repository:
-Push your local code to the remote repository's master branch. 
-git push -u origin master    
-
--->
 <section id="about">
 <div class="container p-5">
             <div class="card">
@@ -213,7 +175,7 @@ git push -u origin master
     <div class="card p-3">
       <div class="card-body px-5 text-center">
         <h1><mark>Let's Connect</mark></h1>
-        <p class="lead">Would love to connect with potential employers, collabrators, and developers alike.</p>
+        <p class="lead">Would love to connect with potential employers, collaborators, and other web developers alike.</p>
         <p class="fs-2">
           <a target="_blank" href="https://github.com/IrrationalSia" class="no-underline"><i class="bi bi-github m-2"></i></a>
           <a target="_blank" href="mailto:mpahlwasm@gmail.com" class="no-underline"><i class="bi bi-envelope m-2"></i></a>
@@ -259,10 +221,21 @@ git push -u origin master
 <script>
     window.addEventListener("scroll", () => {
       const header = document.querySelector("header");
-      header.classList.toggle(".scrolling", window.scrollY>0);
+      header.classList.toggle("scrolling", window.scrollY>0);
     }
 
     )
 </script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed('#expertise', {
+  strings: ['Fullstack Developer.',' Accountant.',' Entrepreneur.',' Physicist.'],
+  smartBackspace: true, // Default value
+  typeSpeed: 10,
+  loop: true
+
+});
+</script>
+
   </body>
 </html>
